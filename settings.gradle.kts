@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CoroutineSample"
 include(":app")
- 
+include(":network")
