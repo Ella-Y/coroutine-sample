@@ -13,5 +13,4 @@ OpenWeatherApi를 이용하여 날씨를 받아온다.
 - :network
 
 ### yield, isActive, supervisorJob
-
-
+- https://github.com/Ella-Y/slilabs-ota
