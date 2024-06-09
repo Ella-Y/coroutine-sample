@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface ApiWeather {
 
     @GET("https://api.openweathermap.org/data/2.5/weather?units=metric&lang=en")
-    suspend fun getCurrentCity(
+    suspend fun getWeatherCurrent(
         @Query("lat") latitude: Double?,
         @Query("lon") longitude: Double?,
         @Query("appid") key: String,

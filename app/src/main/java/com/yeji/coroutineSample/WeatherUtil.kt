@@ -25,7 +25,7 @@ class WeatherUtil {
 
     suspend fun getWeather(latitude: Double, longitude: Double): WeatherModel? {
         return withContext(Dispatchers.IO) {
-            val deferredCurrent = async { apiWeather.getCurrentCity(latitude, longitude, appId) }
+            val deferredCurrent = async { apiWeather.getWeatherCurrent(latitude, longitude, appId) }
             val deferredForecast = async { apiWeather.getForecast(latitude, longitude, appId) }
 
             try {
